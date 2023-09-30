@@ -1,0 +1,376 @@
+
+
+body {
+    margin: 0;
+    background-color: #0e0e0e;
+    /*background-image: url('media/background.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed    ;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.circle {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%; /* Forma de círculo */
+    position: fixed;
+    background-image: url(media/radial.png);
+    background-size: cover;
+    opacity: 5%;
+    pointer-events: none; /* Evita que el círculo interrumpa eventos del mouse */
+    top: -50%;
+    left: -50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.left {
+    display: grid;
+    width: 50%;
+    height: 70vh;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.right {
+    position: relative;
+    width: 50%;
+    height: 240vh;
+    left: 50%;
+    top: 20vh;
+    min-width: 500px;
+}
+
+.name {
+    color: #ffd9c7;
+
+    position: absolute;
+    font-weight: bold;
+    font-size: 10vh;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif, Arial;
+    line-height: 10vh;
+    letter-spacing: -3px;
+    padding-left: 20vh;
+    min-width: 500px;
+}
+
+.speciality {
+    position: absolute;
+    color: #e6a68a;
+    font-size: 3vh;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif, Arial;
+    letter-spacing: 0px;
+    padding-top: 15vh;
+    padding-left: 20vh;
+    min-width: 500px;
+}
+
+.description {
+    position: absolute;
+    color: #a89891;
+    font-size: 2.8vh;
+    font-weight: 450;
+    font-family: 'Inter', sans-serif, Arial;
+    letter-spacing: 0px;
+    padding-top: 40vh;
+    padding-left: 20vh;
+    min-width: 400px;
+}
+
+.social_menu {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 1vh;
+    justify-content: left;
+    align-items: center;
+    padding-top: 20vh;
+    padding-left: 20vh;
+    top: 65vh;
+}
+
+.social_menu img {
+    width: 5vh;
+    padding-left: 3vh;
+}
+
+.social_menu img:hover {
+    scale: 1.2;
+    filter: drop-shadow(#ffcea693 0px 0px 10px);
+}
+
+.first_text {
+    color: #a89891;
+    font-size: 2.8vh;
+    font-weight: 450;
+    font-family: 'Inter', sans-serif, Arial;
+    width: 100vh;
+}
+
+.experiences {
+    display: grid;
+}
+
+.projects {
+    display: grid;
+    position: relative;
+    justify-content: left;
+}
+
+.title{
+    color: #ffd9c7;
+
+    position: relative;
+    font-weight: bold;
+    font-size: 5vh;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif, Arial;
+    padding-top: 5vh;
+}
+
+.text_experience {
+    color: #a89891;
+
+    position: relative;
+    font-weight: bold;
+    font-size: 3vh;
+    font-weight: 450;
+    font-family: 'Inter', sans-serif, Arial;
+    width: 90%;
+}
+
+.skills {
+    display: grid;
+    position: relative;
+    justify-content: left;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: center;
+    width: 80vh;
+    top: 20vh;
+    left: 0vh;
+    padding-top: 12vh;
+}
+
+.skills img {
+    width: 13vh;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; /* Agregar transición para la propiedad filter */
+    padding: 5vh;
+}
+
+.skills img:hover {
+    filter: grayscale(0%);
+    transition: filter 0.3s ease;
+    scale: 1.2;
+    filter: drop-shadow(#ffcea654 0px 0px 10px);
+}
+
+.html:hover::before {
+    content: 'HTML'; /* Agrega contenido vacío para que el cuadro sea visible */
+    display: block;
+    top: 33vh;
+    left: 13vh; /* Cambia esto a 0 para que el cuadro esté alineado a la izquierda del elemento principal */
+    position: absolute;
+    width: 17vh; /* Cambia esto para que el ancho sea igual al 100% del elemento principal */
+    height: 0.5vh; /* Cambia esto para que la altura sea igual al 100% del elemento principal */
+    color: wheat;
+    font-size: 3vh;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif, Arial;
+    border-radius: 10px;
+}
+
+.css:hover::before {
+    content: 'CSS'; /* Agrega contenido vacío para que el cuadro sea visible */
+    display: block;
+    top: 33vh;
+    left: 37vh; /* Cambia esto a 0 para que el cuadro esté alineado a la izquierda del elemento principal */
+    position: absolute;
+    width: 17vh; /* Cambia esto para que el ancho sea igual al 100% del elemento principal */
+    height: 0.5vh; /* Cambia esto para que la altura sea igual al 100% del elemento principal */
+    color: wheat;
+    font-size: 3vh;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif, Arial;
+    border-radius: 10px;
+}
+
+.sql:hover::before {
+    content: 'SQL'; /* Agrega contenido vacío para que el cuadro sea visible */
+    display: block;
+    top: 33vh;
+    left: 59vh; /* Cambia esto a 0 para que el cuadro esté alineado a la izquierda del elemento principal */
+    position: absolute;
+    width: 17vh; /* Cambia esto para que el ancho sea igual al 100% del elemento principal */
+    height: 0.5vh; /* Cambia esto para que la altura sea igual al 100% del elemento principal */
+    color: wheat;
+    font-size: 3vh;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif, Arial;
+    border-radius: 10px;
+}
+
+.java:hover::before {
+    content: 'JAVA'; /* Agrega contenido vacío para que el cuadro sea visible */
+    display: block;
+    top: 56.5vh;
+    left: 13vh; /* Cambia esto a 0 para que el cuadro esté alineado a la izquierda del elemento principal */
+    position: absolute;
+    width: 17vh; /* Cambia esto para que el ancho sea igual al 100% del elemento principal */
+    height: 0.5vh; /* Cambia esto para que la altura sea igual al 100% del elemento principal */
+    color: wheat;
+    font-size: 3vh;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif, Arial;
+    border-radius: 10px;
+}
+
+.python:hover::before {
+    content: 'PYTHON'; /* Agrega contenido vacío para que el cuadro sea visible */
+    display: block;
+    top: 56.5vh;
+    left: 33.5vh; /* Cambia esto a 0 para que el cuadro esté alineado a la izquierda del elemento principal */
+    position: absolute;
+    width: 17vh; /* Cambia esto para que el ancho sea igual al 100% del elemento principal */
+    height: 0.5vh; /* Cambia esto para que la altura sea igual al 100% del elemento principal */
+    color: wheat;
+    font-size: 3vh;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif, Arial;
+    border-radius: 10px;
+}
+
+.lua:hover::before {
+    content: 'LUA'; /* Agrega contenido vacío para que el cuadro sea visible */
+    display: block;
+    top: 56.5vh;
+    left: 60.5vh; /* Cambia esto a 0 para que el cuadro esté alineado a la izquierda del elemento principal */
+    position: absolute;
+    width: 17vh; /* Cambia esto para que el ancho sea igual al 100% del elemento principal */
+    height: 0.5vh; /* Cambia esto para que la altura sea igual al 100% del elemento principal */
+    color: wheat;
+    font-size: 3vh;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif, Arial;
+    border-radius: 10px;
+}
+
+.line {
+    content: "";
+    position: relative;
+    background-color: #252525;
+    width: 80vh;
+    height: 0.5vh;
+    top: 59vh;
+    left: 2vh;
+}
+
+.project_name {
+    color: #ffd9c7;
+
+    position: relative;
+    font-size: 3vh;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif, Arial;
+    top: -17vh;
+    left: 32vh;
+    white-space: nowrap;
+    width: 10vh;
+}
+
+.projects img {
+    width: 30vh;
+    border-radius: 10px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #a89891;
+
+}
+
+.linkto_project {
+    display: flex;
+    position: relative;
+    width: 10vh;
+    top: -20vh;
+    left: 32vh;
+    
+}
+
+.linkto_project img {
+    width: 4vh;
+}
+
+.portfolio-item {
+    position: relative; /* Para que el contenido dentro del div esté apilado encima del fondo */
+    width: 95vh;
+    height: 20vh;
+    padding: 2vh;
+    background-color: transparent; /* Establece un fondo transparente inicialmente */
+    transition: background-color 0.2s ease; /* Agrega una transición suave */
+    border-radius: 10px;
+    border-color: #ffc7a717;
+    border-width: 10px;
+    cursor: pointer;
+}
+
+.portfolio-item:hover {
+    background-color: #ffc7a717; /* Cambia el color de fondo cuando se hace hover */
+
+    border-radius: 10px;
+    border-color: #ffc7a717;
+    border-width: 10px;
+}
+
+.linkto_project span {
+    position: relative;
+    color: #fcb99f;
+    font-size: 2.8vh;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif, Arial;
+    width: 10vh;
+    left: 2vh;
+    bottom: -0.5vh;
+}
+
+.description_project {
+    position: relative;
+    color: #b3a49e;
+    font-size: 2.8vh;
+    font-weight: 450;
+    font-family: 'Inter', sans-serif, Arial;
+    width: 60vh;
+    top: -19vh;
+    left: 32vh;
+}
+
+@media (max-width:1200px){
+
+    .left {
+        position: relative;
+    }
+
+    .right {
+        top: 70vh;
+        left: 10%;
+        height: 250vh;
+    }
+}
